@@ -535,21 +535,13 @@ font-size: 16px;
 }
 
 .imgs-container .more {
-    
 background-color: var(--main-color);
-    
 display: block;
-    
 margin: 30px auto;
-    
 padding: 20px;
-    
 text-decoration: none;
-    
 font-size: 22px;
-    
 font-weight: 700;
-    
 color: white;
 }
 /* end portofolio */
