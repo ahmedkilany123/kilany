@@ -545,3 +545,53 @@ font-weight: 700;
 color: white;
 }
 /* end portofolio */
+
+
+
+/* start vid  */
+
+.video {
+    position: relative;
+}
+.video video {
+    width: 100%;
+}
+
+.video .text {
+    text-align: center;
+    position: absolute;
+    top: 50%;transform: translateY(-50%);
+    width: 100%;
+    background-color: var(--transparent-color);
+    color: white;
+    padding: 50px;
+}
+.video .text h2 {
+font-weight: normal;
+text-transform: uppercase;
+margin: 0 0 30px;
+}
+ 
+.video .text p {
+
+margin-bottom: 30px;
+}
+
+.video .text button {
+background-color: black;
+color: white;
+padding: 10px 20px;
+text-transform: capitalize;
+border: none;
+}
+
+/* end vid  */
+
+/* start about  */
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+    max-width: 100vh;
+}
+/* end about  */
