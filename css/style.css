@@ -590,12 +590,23 @@ border: none;
 /* start about  */
 .about {
     padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
-    text-align: center;
-    max-width: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.about img {
+    position: relative;
+    bottom: -120px;
+    margin-top: -140px;
+    max-width: 100%;
+}
+@media (max-width:767px) {
+    .about img {
+        bottom: -60px;
+        margin-top: -60px;
+    }
 }
 /* end about  */
-
 
 /* start stats  */
 .stats {
