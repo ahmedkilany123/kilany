@@ -1158,7 +1158,6 @@ color: #777;
 
 .footer {
     padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
     background-image: url(../img/footer.jpg);
     background-size: cover;
     position: relative;
@@ -1181,7 +1180,8 @@ position: relative;
  }
 
  .footer .container img {
-width: 200px;
+    /* width: 150px; */
+    height: 152px;
 }
 
  .footer .container p:not(.copy-right){
