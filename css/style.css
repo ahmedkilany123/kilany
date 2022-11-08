@@ -732,6 +732,7 @@ margin-right: 60px;
 flex-direction: column;
 text-align: center;
 
+
 }
  .our-skills .testmonials .content  img {
 margin: 0 auto 20px;
@@ -763,12 +764,19 @@ background-color: var(--main-color);
 border-color: var(--transparent-color);
 }
 
-.skills .prog-holder {margin-bottom: 30px;}
+.skills .prog-holder {
+    margin-bottom: 30px;
+}
 
 .our-skills .skills  h4 {
     margin-bottom: 15px;
     font-weight: normal;
     text-transform: uppercase;
+}
+@media (max-width:767px) {
+    .our-skills .skills h3 {
+    padding-top: 20px;
+    }
 }
 
 .our-skills .skills .prog {
@@ -861,12 +869,14 @@ background-color: #fcfcfc;
 text-align: center;
 }
 
-.price .container .plans .plan .head {padding: 40px 20px;
+.price .container .plans .plan .head {
+    padding: 40px 20px;
     border-top: 1px solid var(--main-color);
     border-bottom: 1px solid var(--main-color);
 }
 
-.price .container .plans .plan .head h3 {font-weight: normal;
+.price .container .plans .plan .head h3 {
+    font-weight: normal;
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: 20px;
@@ -886,7 +896,8 @@ text-align: center;
     margin-right: 15px;
 }
 
-.price .container .plans .plan .head span::after {content: '/mon';
+.price .container .plans .plan .head span::after {
+    content: '/mon';
     position: relative;
     font-size: 20px;
     right: -15px;
@@ -930,8 +941,8 @@ position: relative;
 }
 
 .price .container p {
-margin-top: 40px;
 text-align: center;
+margin-top: 40px;
 }
 
 .price .container .contact-link {
@@ -949,3 +960,253 @@ text-align: center;
 
 
 /* end price  */
+
+/* start subscribe */
+
+.subscribe {
+padding-top: var(--section-padding);
+padding-bottom: var(--section-padding);
+position: relative;
+color: white;
+background-image: url(../img/subscribe.jpg);
+background-size: cover;
+}
+
+.subscribe::before {
+    content: '';
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subscribe .container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media(min-width:991px) {
+    .subscribe .container {
+        flex-direction: column;
+
+    }
+    .subscribe p {
+        padding-left: 20px;
+    }
+}
+@media(min-width:768px) {
+    .subscribe .container  {
+        width: 750px;
+    }
+}
+@media(min-width:1119px) {
+    .subscribe .container  {
+        width: 1110px;
+    }
+}
+
+.subscribe .container form {
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.subscribe .container form i{
+position: absolute;
+font-size: 30px;
+margin: 20px;
+}
+
+.subscribe .container form input[type="email"] {
+    padding: 20px 20px 20px 60px;
+    width: calc(100% - 130px);
+    /* font-size: 25px; */
+    background-color: transparent;
+    border: 1px solid white;
+    border-right: none;
+    color: white;
+}
+
+
+
+.subscribe .container form input[type="submit"] {
+    position: relative;
+    width: 170px;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    border-left: none;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    caret-color: var(--main-color);
+}
+.subscribe .container form input:focus {
+    outline: none;
+}
+::placeholder {
+    color: white;
+}
+
+.subscribe p {
+text-align: center;
+}
+
+/* end subscribe */
+
+
+
+/* start content  */
+
+.contact-us {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+@media(max-width:767px) {
+    .contact-us .container .content {
+        flex-direction: column;
+    }
+}
+
+.contact-us .container .content {
+display: flex;
+justify-content: space-between;
+}
+
+.contact-us .container .content form {
+flex-basis: 70%;
+}
+
+.contact-us .container .content form .main-input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    caret-color: var(--main-color);
+    color: #333;
+}
+
+.contact-us .container .content form textarea.main-input {
+    height: 200px;
+}
+
+.contact-us .container .content form .main-input::placeholder {
+    color: #333;
+}
+:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    -webkit-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -ms-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+}
+
+.contact-us .container .content form  input[type="submit"]{
+    padding: 13px 14px;
+    background-color: var(--main-color);
+    border: navajowhite;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.contact-us .container .content .info {
+flex-basis: 25%;
+}
+
+.contact-us .container .content .info h4:first-of-type {
+margin-bottom: 30px;
+font-size: 18px;
+font-weight: normal;
+text-transform: uppercase;
+}
+
+.contact-us .container .content .info h4:last-of-type {
+margin-top: 90px;
+margin-bottom: 20px;
+font-size: 18px;
+font-weight: normal;
+text-transform: uppercase;
+}
+
+.contact-us .container .content .info span {
+display: block;
+margin-bottom: 10px;
+color: #777;
+}
+
+.contact-us .container .content .info address {
+    color: #777;
+    line-height: 2;
+}
+/* end content  */
+
+
+/* start footer  */
+
+.footer {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.footer::before {
+    content: '';
+    background-color: rgb(0 0 0 / 69%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+ .footer .container {
+position: relative;
+ }
+
+ .footer .container img {
+width: 200px;
+}
+
+ .footer .container p:not(.copy-right){
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.footer .container .social i {
+    padding: 10px 15px;
+}
+
+.footer .container .social i:hover {
+    color: var(--main-color);
+}
+
+.footer .container .copy-right{
+    margin-top: 60px;
+}
+
+.footer .container .copy-right span {
+    color: var(--main-color);
+}
+/* end footer  */
